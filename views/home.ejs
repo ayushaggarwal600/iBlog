@@ -10,13 +10,15 @@
             <div class="row row-cols-4">
                 <% blogs.forEach(blog => { %>
                 <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card"
+                        style="width: 18rem; height:18rem; margin-bottom: 2rem;">
                         <img src="<%= blog.coverImageURL %>"
                             class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title"><%= blog.title %></h5>
                             <a href="/blog/<%= blog._id %>"
-                                class="btn btn-primary">View</a>
+                                class="btn btn-primary"
+                                style="margin-bottom: 10px;">View</a>
                         </div>
                     </div>
                 </div>
