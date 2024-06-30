@@ -9,6 +9,7 @@ cloudinary.config({
 exports.uploadFile = async (file, folder) => {
   const options = { folder };
   try {
+    //
     const result = await cloudinary.uploader.upload(file.path, options);
     return result;
   } catch (error) {
