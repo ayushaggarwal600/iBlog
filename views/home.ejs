@@ -11,15 +11,15 @@
                 <% blogs.forEach(blog => { %>
                 <div class="col">
                     <div class="card"
-                        style="border: 1px solid black; min-height: 200px; margin-block: 30px; margin-inline: 10px;"
+                        style="border: 1px solid black; min-height: 320px; margin-block: 30px; margin-inline: 10px;"
                         style="width: 18rem; height:18rem; margin-bottom: 2rem;">
                         <img src="<%= blog.coverImageURL %>"
                             style="width: 285px;; border-radius: 5px;">
-                        <div class="card-body">
+                        <div class="card-body" style="position: relative;">
                             <h5 class="card-title"><%= blog.title %></h5>
                             <a href="/blog/<%= blog._id %>"
                                 class="btn btn-primary"
-                                style="margin-bottom: 10px;">View</a>
+                                style="position: absolute; bottom: 20px;">View</a>
                         </div>
                     </div>
                 </div>
